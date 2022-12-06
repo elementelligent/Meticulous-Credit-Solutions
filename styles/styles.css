@@ -1,13 +1,23 @@
 header {
-  background-color: lightblue;
+  background-image: linear-gradient(rgb(137 179 137), white);
 }
 
 main {
-  background-color: azure;
+  background-color: white;
 }
 
 footer {
   background-color: aliceblue;
+}
+
+html {
+  background: url();
+  background-size: cover;
+}
+
+.bg-translucent-dark {
+  color: black;
+  padding: 1rem;
 }
 
 button {
@@ -23,19 +33,27 @@ button {
   position: absolute;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
 }
 
-.flex--col {
+.flex-col {
   flex-direction: column;
 }
 
-.flex--content-center {
+.flex-content-center {
   justify-content: center;
 }
 
-.flex--items-center {
+.flex-items-center {
   align-items: center;
 }
 
@@ -55,15 +73,21 @@ button {
   background-position: center;
 }
 
-/*ADD IMAGES */
+/* ADD IMAGES */
 #contact {
   background-image: url("");
   box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 50%);
 }
 
 #hero {
-  background-image: url("");
+  background-image: url("../images/moneyhouse.jpg");
   height: 50vh;
+  opacity: 0.4;
 }
 
-/*ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE*/
+/* ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE */
+@media (width >= 1024) {
+  .flex-lg {
+    display: flex;
+  }
+}
