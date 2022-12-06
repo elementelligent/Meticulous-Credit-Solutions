@@ -3,7 +3,6 @@ header {
 }
 
 main {
-  background-color: white;
 }
 
 footer {
@@ -11,8 +10,10 @@ footer {
 }
 
 html {
-  background: url();
+  background: url(../images/moneyhouse.jpg);
+  background: no-repeat;
   background-size: cover;
+  height: 50vh;
 }
 
 .bg-translucent-dark {
@@ -47,6 +48,9 @@ button {
 
 .flex-col {
   flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-content-center {
@@ -103,8 +107,22 @@ button {
 }
 
 /* ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE */
-@media (width >= 1024) {
+
+@media (width >=768px) {
+  #hero section:first-of-type {
+    width: 50%;
+  }
+}
+
+.flex-row--md {
+  flex-direction: row;
+}
+
+@media (width >= 1024px) {
   .flex-lg {
     display: flex;
+  }
+  .flex-row {
+    flex-direction: row;
   }
 }
