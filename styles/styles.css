@@ -49,6 +49,7 @@ button {
 .flex-col {
   flex-direction: column;
 }
+
 .flex-row {
   flex-direction: row;
 }
@@ -70,7 +71,7 @@ button {
   width: 33.33%;
 }
 
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -108,7 +109,7 @@ button {
 
 /* ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE */
 
-@media (width >=768px) {
+@media (width >= 768px) {
   #hero section:first-of-type {
     width: 50%;
   }
@@ -122,6 +123,7 @@ button {
   .flex-lg {
     display: flex;
   }
+
   .flex-row {
     flex-direction: row;
   }
