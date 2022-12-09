@@ -2,36 +2,26 @@ header {
   background-image: linear-gradient(rgb(137 179 137), white);
 }
 
-main {
-}
-
 footer {
-  background-color: aliceblue;
-}
-
-html {
-  background: url(../images/moneyhouse.jpg);
-  background: no-repeat;
-  background-size: cover;
-  height: 50vh;
+  background-image: linear-gradient(white, rgb(137 179 137));
 }
 
 .bg-translucent-dark {
+  background-color: rgb(0 0 0 / 30%);
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-button {
+.button {
   background-color: orange;
-  border-radius: 4px;
+  border-radius: 2rem;
   align-self: center;
-  margin-top: 0.2rem;
   padding: 0.05rem;
   max-width: max-content;
 }
 
-.absolute {
-  position: absolute;
+.input-box-radius {
+  border-radius: 1rem;
 }
 
 .text-center {
@@ -77,7 +67,7 @@ button {
   clear: both;
 }
 
-.columns {
+.flex-center-columns {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
@@ -98,7 +88,7 @@ button {
 #grid {
   display: grid;
   width: 100;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #contact,
@@ -108,22 +98,24 @@ button {
 }
 
 /* ADD IMAGES */
+#improve {
+  background-image: url("../images/moneyhouse.jpg");
+}
+
 #contact {
-  background-image: url("../images/creditunionbldg.jpg");
+  background-image: url("../images/cardsandtablet.jpg");
   box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 50%);
 }
 
 #hero {
-  background-image: url("../images/moneyhouse.jpg");
-  height: 50vh;
-  opacity: 0.4;
+  background-image: url("../images/Wallet.jpg");
+  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 50%);
 }
 
 /* ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE */
 
 @media (width >= 768px) {
   #hero section:first-of-type {
-    width: 50%;
   }
 }
 
