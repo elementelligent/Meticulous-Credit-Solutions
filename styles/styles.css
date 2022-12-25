@@ -138,7 +138,7 @@ nav a:hover {
 
 /* ADD MEDIA FOR ADJUSTMENT TO SCREEN SIZE */
 
-@media (width >= 768px) {
+@media (width >= 600px) {
   #hero section:first-of-type {
   }
 }
